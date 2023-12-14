@@ -25,9 +25,9 @@ public:
 	{
 		Shape* s;
 		cout << "************ Drawing Scene ************" << endl;
-		while((s = objects->next()) != nullptr)
+		while ((s = objects->next()) != nullptr)
 		{
-			objects->next()->draw();
+			s->draw();
 		}
 		cout << "***************************************" << endl;
 	}
